@@ -46,7 +46,7 @@ export const Footer = () => (
     </div>
     <div className='flex flex-wrap justify-between gap-10 md:gap-20'>
       {FOOTER_BLOCKS.map((footerBlock, index) => (
-        <div className='flex flex-col gap-6' key={index}>
+        <div key={index} className='flex flex-col gap-6'>
           <Typography tag='h4' variant='body-lg'>
             {footerBlock.label}
           </Typography>
