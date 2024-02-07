@@ -16,7 +16,7 @@ import clsx from 'clsx';
 
 export const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
-  const preventDefault = useCallback((e) => e.preventDefault(), []);
+  const preventDefault = useCallback((e: TouchEvent) => e.preventDefault(), []);
 
   const toggleMenu = () => {
     setIsMenuOpen((prev) => !prev);
