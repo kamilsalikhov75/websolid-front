@@ -16,7 +16,7 @@ export const Card = ({ children, className, ...props }: CardProps) => (
   <div
     data-testid={CARD_TEST_IDS.CONTAINER}
     className={twMerge(
-      'h-full w-full rounded-[20px] border border-purple bg-white p-5 shadow-lg',
+      'h-fit w-full rounded-[20px] border border-purple bg-white p-5 shadow-lg',
       className
     )}
     {...props}
