@@ -11,18 +11,21 @@ import {
   CloseIcon,
   Logo
 } from '@/shared/ui';
-import { useState } from 'react';
+import { useCallback, useState } from 'react';
 import clsx from 'clsx';
 
 export const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const preventDefault = useCallback((e) => e.preventDefault(), []);
 
   const toggleMenu = () => {
     setIsMenuOpen((prev) => !prev);
     if (!isMenuOpen) {
       document.body.classList.add('overflow-y-hidden');
+      document.body.addEventListener('touchmove', preventDefault, { passive: false });
     } else {
       document.body.classList.remove('overflow-y-hidden');
+      document.body.removeEventListener('touchmove', preventDefault);
     }
   };
 
@@ -45,7 +48,7 @@ export const Header = () => {
       <div
         className={clsx('absolute  right-0 top-0 h-dvh  bg-blue-500 transition-all lg:hidden', {
           'w-0 overflow-clip opacity-0': !isMenuOpen,
-          'w-dvw px-[10px] md:px-5 opacity-100': isMenuOpen
+          'w-dvw px-[10px] opacity-100 md:px-5': isMenuOpen
         })}
       >
         <div className='flex items-center justify-between py-5'>
