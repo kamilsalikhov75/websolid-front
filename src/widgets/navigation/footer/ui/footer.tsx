@@ -35,9 +35,9 @@ export const Footer = () => (
           </Typography>
         </Link>
         <div className='flex gap-5'>
-          <IconLink href={CONTACTS.VK} icon={<VKIcon />} />
-          <IconLink href={CONTACTS.TELEGRAM} icon={<TelegramIcon />} />
-          <IconLink href={CONTACTS.WHATSAPP} icon={<WhatsappIcon />} />
+          <IconLink href={CONTACTS.VK} icon={<VKIcon />} target='_blank' />
+          <IconLink href={CONTACTS.TELEGRAM} icon={<TelegramIcon />} target='_blank' />
+          <IconLink href={CONTACTS.WHATSAPP} icon={<WhatsappIcon />} target='_blank' />
         </div>
       </div>
       <Typography className='text-blue-500' tag='p' variant='body-sm'>

@@ -1,9 +1,10 @@
 import NextLink from 'next/link';
 import type { LinkProps as NextLinkProps } from 'next/link';
 
-export interface IconLinkProps extends NextLinkProps {
+export type IconLinkProps = {
   icon: React.ReactNode;
-}
+} & NextLinkProps &
+  ReactTagProps<'a'>;
 
 export const IconLink = ({ icon, ...props }: IconLinkProps) => (
   <NextLink
