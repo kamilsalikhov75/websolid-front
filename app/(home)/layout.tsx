@@ -7,7 +7,8 @@ const RootLayout = ({
   children: React.ReactNode;
 }>) => (
   <>
-    <BackgroundIcons />
+   
+    <BackgroundIcons />  {/* TOOD: убрать или добавить на все страницы */}
     <div className='mx-auto flex max-w-[1240px] flex-col justify-center gap-10 px-[10px] md:px-5'>
       <Header />
       {children}

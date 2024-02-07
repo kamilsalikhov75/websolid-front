@@ -30,3 +30,5 @@ export const SERVICES = [
     title: 'Дизайн сайтов'
   },
 ];
+
+// TODO: подумать над тем, чтобы вынести это в strapi

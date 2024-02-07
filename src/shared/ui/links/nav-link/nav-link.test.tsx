@@ -34,3 +34,5 @@ describe('LinkButton', () => {
   //   expect(container).toHaveClass(classNames);
   // });
 });
+
+// TODO: написать тесты для проверки активного состояния

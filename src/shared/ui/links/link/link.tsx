@@ -28,3 +28,5 @@ export const Link = ({ icon, children, ...props }: LinkProps) => (
     <span data-testid={LINK_TEST_IDS.CHILDREN}>{children}</span>
   </NextLink>
 );
+
+// TODO: написать тесты
