@@ -1,4 +1,4 @@
-### WEB SOLID
+# WEB SOLID
 
 ## Скрипты проекта
 - npm run test - Для запуска тестов
