@@ -1,7 +1,7 @@
 import type { Metadata } from 'next';
 import '@/app/styles/global.css';
 import { nunito } from '@/app/styles';
-import { cn } from '@/src/shared/utils';
+import { cn } from '@/src/shared/utils/helpers';
 import { Analytics } from '@vercel/analytics/react';
 import { SpeedInsights } from '@vercel/speed-insights/next';
 import { Footer, Header } from '@/src/widgets/navigation';
