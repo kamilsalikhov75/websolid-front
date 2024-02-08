@@ -12,7 +12,15 @@
     "storybook": "storybook dev -p 6006",
     "build-storybook": "storybook build",
     "test": "jest",
-    "prepare": "husky"
+    "prepare": "husky",
+    "pre-commit": "npx lint-staged"
+  },
+  "lint-staged": {
+    "*.{ts,tsx}": [
+      "npm run lint-fix",
+      "npm run format",
+      "npm run test"
+    ]
   },
   "dependencies": {
     "@vercel/analytics": "^1.1.3",
