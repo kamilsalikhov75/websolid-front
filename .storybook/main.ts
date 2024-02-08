@@ -19,9 +19,12 @@ const config: StorybookConfig = {
   webpackFinal: async (config: any) => {
     config.resolve.alias = {
       ...config.resolve.alias,
-      '@/shared/ui/icons': path.resolve(__dirname, '../src/shared/ui/icons')
-      // '@/shared/ui/buttons': path.resolve(__dirname, '../src/shared/ui/buttons'),
-      // '@/app/assets/fonts': path.resolve(__dirname, '../src/app/assets/fonts')
+      '@/shared/ui/icons': path.resolve(__dirname, '../src/shared/ui/icons'),
+      '@/shared/utils': path.resolve(__dirname, '../src/shared/utils'),
+      '@/shared/assets/images/test-image.jpg': path.resolve(
+        __dirname,
+        '../src/shared/assets/images/test-image.jpg'
+      )
     };
 
     return config;

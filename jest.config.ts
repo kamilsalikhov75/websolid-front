@@ -10,6 +10,9 @@ const config: Config = {
   collectCoverage: true,
   coverageDirectory: 'coverage',
   coverageProvider: 'v8',
+  moduleNameMapper: {
+    'shared/utils/helpers': '<rootDir>/src/shared/utils/helpers'
+  },
   rootDir: './',
   setupFilesAfterEnv: ['<rootDir>/jest.setup.ts'],
   testEnvironment: 'jsdom'

@@ -6,7 +6,7 @@ const cardProps = {
   children: 'chidlren'
 } satisfies CardProps;
 
-describe('Icon BUtton', () => {
+describe('Card', () => {
   test('should display container', () => {
     render(<Card {...cardProps} />);
 
