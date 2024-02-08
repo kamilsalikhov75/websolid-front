@@ -33,7 +33,7 @@ export const BackgroundIcons = () => (
     </svg>
 
     <svg
-      className='absolute top-[217px] z-[-1] hidden md:block'
+      className='absolute left-0 top-[217px] z-[-1] hidden md:block'
       fill='none'
       height='291'
       viewBox='0 0 122 291'

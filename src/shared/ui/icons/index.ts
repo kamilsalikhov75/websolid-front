@@ -8,3 +8,4 @@ export * from './mail';
 export * from './vk';
 export * from './telegram';
 export * from './whatsapp';
+export * from './logo-icon';

@@ -14,3 +14,5 @@ export const IconLink = ({ icon, ...props }: IconLinkProps) => (
     {icon}
   </NextLink>
 );
+
+// TODO: написать тесты
