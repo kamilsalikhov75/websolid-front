@@ -22,7 +22,8 @@
       "@/shared/*": ["./src/shared/*"],
       "@/app/*": ["./src/app/*"],
       "@/pages/*": ["./src/fsd-pages/*"],
-      "@/widgets/*": ["./src/widgets/*"]
+      "@/widgets/*": ["./src/widgets/*"],
+      "@/features/*": ["./src/features/*"],
     }
   },
   "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts"],

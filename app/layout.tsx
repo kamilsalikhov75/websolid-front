@@ -30,5 +30,3 @@ const RootLayout = ({
 );
 
 export default RootLayout;
-
-// TODO: Поставить lint-staged, хаски и настроить пре коммит хук

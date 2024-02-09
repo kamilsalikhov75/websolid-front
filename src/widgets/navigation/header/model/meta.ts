@@ -22,6 +22,6 @@ export const ROUTES: Route[] = [
 ];
 
 export const CONTACT_US: Route = {
-  href: '#',
+  href: '/feedback',
   label: 'Связаться с нами'
 };
